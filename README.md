@@ -1,6 +1,21 @@
 # AI Model Marketplace dApp
 
-This is a decentralized application (dApp) that allows users to list, purchase, and rate AI models on the Ethereum blockchain. The marketplace features a smart contract that manages model listings, transactions, ratings, and fund withdrawals. The frontend interacts with the smart contract, enabling users to perform all necessary actions directly from their browser.
+The AI Model Marketplace is a decentralized application (dApp) that allows users to list, purchase, and rate AI models. The smart contract is deployed on the Ethereum blockchain (Holesky testnet), and the frontend interacts with it using Web3.js.
+
+## Demo
+
+Here are some screenshots and a demo of how the dApp works:
+
+- **Home Page**:
+  ![image](https://github.com/user-attachments/assets/5d6014d1-ab2d-4c20-8ec1-098865f7dbdf)
+
+
+- **Rating**:
+  ![image](https://github.com/user-attachments/assets/5ae155bf-2063-4195-a316-8eb98062d07d)
+
+
+  - **View Details**:
+  ![image](https://github.com/user-attachments/assets/f4a9063d-7aef-4dcf-b96a-422252c40263)
 
 ## Features
 

@@ -1,15 +1,19 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
+require("dotenv").config();
 
-/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.27",
+  solidity: "0.8.27", 
   networks: {
-    rinkeby: {
-      provider: () => new HDWalletProvider('your-mnemonic', `https://rinkeby.infura.io/v3/YOUR_INFURA_PROJECT_ID`),
-      network_id: 4,       // Rinkeby's id
-      gas: 5500000,        // Gas limit
+    mainnet: {
+      url: process.env.ALCHEMY_API_URL, 
+      accounts: [process.env.PRIVATE_KEY], 
+    },
+    holesky: {
+      url: "https://eth-holesky.g.alchemy.com/v2/S433g3rPceebcv6GRTkDIdOrL0fXe9Sq", 
+      accounts: [`0x${"0ca945c8491b505acd504a152146c994adaa125b21edae6d3dff70e157f01484"}`] 
     }
-  }
-  
+  },
 };
+
+
 
